@@ -1,6 +1,6 @@
 # Portfólio 2024
 
-Bem-vindo(a) ao repositório do meu portfólio pessoal ano 2024! Este projeto é uma representação do meu trabalho e habilidades como desenvolvedor, construído com HTML, CSS, JavaScript, Bootstrap e Python/Flask.
+Bem-vindo(a) ao repositório do meu portfólio pessoal! Este projeto é uma representação do meu trabalho e habilidades como desenvolvedor, construído com HTML, CSS, JavaScript, Bootstrap e Python/Flask.
 
 ## Visão Geral
 
