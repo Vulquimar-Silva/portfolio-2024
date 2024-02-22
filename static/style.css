@@ -280,6 +280,36 @@ i.menu-mobile {
   transition: .3s;
 }
 
+/* custom carousel Bootstrap */
+
+.carousel-control-prev {
+    margin-left: -60px !important;
+}
+
+ .carousel-control-next {
+    margin-right: -60px !important;
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  height: 100px;
+  width: 100px;
+  background-size: 100%, 100%;
+  border: none !important;
+  background-image: none !important;
+}
+
+.carousel-control-next-icon:after{
+  content: '>';
+  font-size: 55px;
+  color: red;
+}
+
+.carousel-control-prev-icon:after {
+  content: '<';
+  font-size: 55px;
+  color: red;
+}
 
 @media (max-width: 1860px){
   .carousel-control-prev{
@@ -326,8 +356,16 @@ i.menu-mobile {
   }
 }
 
-@media (max-width: 420px) {
+@media (max-width: 450px) {
   h2.nome-home{
     font-size: 2.8rem !important;
   }
+
+  .carousel-control-prev {
+    display: none !important;
+}
+
+ .carousel-control-next {
+    display: none !important;
+}
 }
