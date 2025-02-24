@@ -38,21 +38,24 @@ def send():
             request.form["mensagem"]
         )
         
-        msg = Message(
-            subject = f'{formContato.nome} te enviou uma mensagem no portfólio 2024',
-            sender = app.config.get("MAIL_USERNAME"),
-            recipients = ['vuquimar@hotmail.com', app.config.get("MAIL_USERNAME")],
-            body = f'''
+        # msg = Message(
+        #     subject = f'{formContato.nome} te enviou uma mensagem no portfólio 2024',
+        #     sender = app.config.get("MAIL_USERNAME"),
+        #     recipients = ['vuquimar@hotmail.com', app.config.get("MAIL_USERNAME")],
+        #     body = f'''
             
-            {formContato.nome} com o e-mail {formContato.email}, te enviou a seguinte mensagem:
+        #     {formContato.nome} com o e-mail {formContato.email}, te enviou a seguinte mensagem:
             
-            {formContato.mensagem}
+        #     {formContato.mensagem}
             
-            '''
-        )
-        mail.send(msg)
-        flash('Mensagem enviada com sucesso!')
+        #     '''
+        # )
+        # mail.send(msg)
+        # flash('Mensagem enviada com sucesso!') 
+        # Exibe a mensagem no Toast conforme solicitado
+        flash('⚠️ O envio de e-mails foi desativado. Envie um e-mail para vuquimar@hotmail.com.', 'warning')
     return redirect('/')
 
 if __name__ == '__main__':
     app.run(debug=True)
+    
